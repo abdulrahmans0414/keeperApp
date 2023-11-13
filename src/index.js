@@ -6,7 +6,6 @@ import App from './components/App';
 ReactDOM.render(<App />,document.getElementById("root"))
 
 
-//to show the Keeper App name in an <h1>.
 //4. Create a Footer.jsx component that renders a <footer> element
 //to show a copyright message in a <p> with a dynamically updated year.
 //5. Create a Note.jsx component to show a <div> element with a
