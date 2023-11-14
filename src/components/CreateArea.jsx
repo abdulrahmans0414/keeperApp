@@ -22,6 +22,10 @@ export default function CreateArea(props) {
     function submitNote(event) {
         event.preventDefault();
         props.onAdd(note)
+        setNote({
+            title: "",
+            content: ""
+        });
 
     }
 
