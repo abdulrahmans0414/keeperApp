@@ -27,7 +27,7 @@ header h1 {
 }
 
 footer {
-    position: absolute;
+    position: fixed; /* Fix the footer at the bottom */
     text-align: center;
     bottom: 0;
     width: 100%;
@@ -123,5 +123,8 @@ form button {
     form button {
         position: static;
         margin-top: 10px;
+    }
+    .note p {
+        text-align: center; 
     }
 }
