@@ -7,7 +7,7 @@ export default function Footer() {
 
     return (
         <footer>
-            <p>Copyright &copy; {currentYear} </p>
+            <p> &copy; Abdul Rahman. All right reserved {currentYear} </p>
         </footer>
     )
 }

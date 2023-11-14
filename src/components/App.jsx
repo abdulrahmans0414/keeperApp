@@ -17,6 +17,10 @@ export default function App() {
 
   }
 
+  function deleteNote(id) {
+    console.log('delete was triggered');
+  }
+
   return (
     <div>
       <Header />
@@ -26,9 +30,10 @@ export default function App() {
 
       {notes.map((noteItem) => {
         return <Note
-          
+
           title={noteItem.title}
           content={noteItem.content}
+          onDelete={deleteNote}
         />
       })}
 
