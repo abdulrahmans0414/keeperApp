@@ -18,7 +18,11 @@ export default function App() {
   }
 
   function deleteNote(id) {
-    console.log('delete was triggered');
+    setNotes(prevNotes => {
+      return prevNotes.filter((noteItem, index) => {
+        return index !== id;
+      });
+    });
   }
 
   return (
