@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import Note from './Note'
@@ -8,8 +8,12 @@ import CreateArea from './CreateArea'
 
 export default function App() {
 
-  function addNote(note) {
-    console.log(note);
+  const [notes, setNotes] = useState([]);
+
+  function addNote(newNote) {
+    setNotes(prevNotes => {
+      return [...prevNotes, newNote]
+    })
 
   }
 
