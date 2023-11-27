@@ -110,25 +110,22 @@ form.create-note button {
 }
 
 
-@media screen and (max-width: 600px) {
-
-    /* Adjust styles for screens with a maximum width of 600px */
-    header {
-        padding: 16px;
-    }
-
-    .note,
-    form {
+@media (max-width: 799px) {
+    form.create-note {
         width: 100%;
-        max-width: none;
+        margin: 30px auto 20px auto;
     }
 
-    form button {
-        position: static;
-        margin-top: 10px;
+
+}
+
+@media (max-width: 477px) {
+
+    /* Add styles for smaller screens */
+    form.create-note {
+        width: 100%;
+        margin: 30px auto 20px auto;
     }
 
-    .note p {
-        text-align: center;
-    }
+
 }
